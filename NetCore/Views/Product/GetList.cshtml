@@ -1,0 +1,9 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "GetList";
+}
+
+<h2>GetList</h2>
+@foreach (var product in Model)
+{ <p>@product.name-@product.price</p>}
+
